@@ -21,8 +21,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/responsive-recipe-page-using-mobilefirst-workflow-miZjP_Ui2S)
+- Live Site URL: [Live site URL here](https://chamindud.github.io/Recipe-page/)
 
 ## My process
 

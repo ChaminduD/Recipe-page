@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(30, 10%, 34%);
+}
+img{
+    width: 100%;
+}
+header h1{
+    padding: 32px 32px 14px;
+    color: hsl(24, 5%, 18%);
+    line-height: 36px;
+    font-size: 36px;
+}
+h1, h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+header p{
+    padding: 10px 32px 0; 
+    line-height: 24px;
+}
+main{
+    margin: 32px;
+}
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 22px 24px;
+    border-radius: 15px;
+}
+.preparation h3{
+    color: hsl(332, 51%, 32%);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.preparation ul{
+    list-style-position: inside;
+    list-style: none;
+    margin-left: 6px;
+}
+.preparation ul li{
+    line-height: 22px;
+    position: relative;
+    padding: 10px 34px 0;
+}
+.preparation ul li::before{
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: hsl(332, 51%, 32%);
+    font-size: 22px;
+    padding-top: 10px;
+}
+h2{
+    font-size: 28px;
+    color: hsl(14, 45%, 36%); 
+    margin: 24px 0 18px;
+}
+.ingredients{
+    list-style-position: inside;
+    list-style: none;
+    margin: 0 0 24px 6px;
+}
+.ingredients li{
+    line-height: 22px;
+    position: relative;
+    padding: 0 34px 10px;
+}
+.ingredients li::before{
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+hr{
+    border: 1px solid hsla(32, 10%, 34%, 0.2);
+}
+.instructions{
+    list-style-type: none;
+    margin: 0 0 30px 6px;
+}
+.instructions li div{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    line-height: 24px;
+    margin-right: 20px;
+}
+.instructions li{
+    margin-bottom: 10px;
+    display: flex;
+}
+.instructions li p{
+    line-height: 24px;
+}
+.instructions li:nth-child(1){
+    margin-left: 3px;
+}
+.table{
+    display: flex;
+}
+.table ul{
+    list-style-type: none;
+    width: 100%;
+    margin-top: 15px;
+}
+.table ul li{
+    border-bottom: 1px solid hsla(32, 10%, 34%, 0.2);
+    padding: 14px 10px;
+}
+.table ul li:nth-child(4){
+    border-bottom: none;
+}
+.table .names li{
+    padding-left: 30px;
+}
+.details{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    display: none;
+}
+.attribution a{
+    color: hsl(332, 51%, 32%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media only screen and (min-width:720px){
+    img{
+        border-radius: 14px;
+    }
+    body{
+        background-color: hsl(30, 54%, 90%);
+        display: grid;
+        place-items: center;
+        margin: clamp(70px, 10%, 120px) 0;
+        position: relative;
+    }
+    header, main{
+        background-color: hsl(0, 0%, 100%);
+        width: 720px;
+    }
+    header{
+        padding: 34px;
+        border-radius: 20px 20px 0 0;
+    }
+    header h1{
+        padding-left: 0;
+    }
+    header p{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    main{
+        margin: 0;
+        padding: 0 34px 34px;
+        border-radius: 0 0 20px 20px;
+    }
+    .table ul li:nth-child(4){
+        padding-bottom: 6px;
+    }
+    .attribution{
+        display: block;
+        position: absolute;
+        bottom: -50px;
+    }
+}
